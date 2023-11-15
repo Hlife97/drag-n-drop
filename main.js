@@ -2,14 +2,6 @@ const row = document.querySelector('.row');
 const items = row.querySelectorAll('.item');
 const fill = document.querySelector('.fill');
 
-fill.addEventListener('dragstart', () => {
-    console.log('first')
-})
-
-fill.addEventListener('dragend', () => {
-    console.log('second')
-})
-
 for (const item of items) {
     item.addEventListener('dragover', e => {
         e.preventDefault();
